@@ -1,0 +1,56 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block main %}
+<div class="container mt-5">
+    <h1 class="text-warning mb-5 border-bottom">CONTACT US</h1>
+    <div class="row text-white mb-5">
+        <p class="mx-auto mb-5">
+            Do you have any qustion please fell free to ask.I will answer all of your querie.Please! fell free to ask...
+        </p>
+        <div class="col-sm-8 mb-5">
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2"
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Phone Number</label>
+                    <input type="tel" class="form-control " pattern="[0-9]{3}-[0-9]{10}" id="exampleFormControlInput3"
+                        placeholder="+918348655583">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Write your Querie here!</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter the text" rows="3"></textarea>
+                    <button type="submit" class="btn btn-success mt-3">Submit</button>
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="offset-sm-1 col-sm-3 md-5">
+            <div class="text-sm-center">
+                <i class="fas fa-map-marked fa-2x i-colo"></i>
+                <p class="ss-color"> EM, 4, 1st Ave, Sector V, Bidhannagar, Kolkata, West Bengal 700091</p>
+            </div>
+
+            <div class="text-sm-center mt-5">
+                <i class="fas fa-phone fa-2x i-colo"></i>
+                <p class="ss-color">+916565852134</p>
+            </div>
+
+            <div class="text-sm-center mt-5">
+                <i class="far fa-envelope fa-2x i-colo"></i>
+                <p class="ss-color font-weight-bold"> sanjibmitra253@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main %}
